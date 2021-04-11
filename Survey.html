@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Survey.css">
+</head>
+<body>
+	<div class="container">
+		<div class="head">
+			<h1 id="title"> What do People commonly use for online class.</h1>
+			<p id="description">We're conducting a survey to know what gadgets do the people commonly use for their online classes. We'd love to read your feedbacks. This will help us make improvements to the existing tool and prioritize new features. The survey should only take 5 minutes, and your responses are completely anonymous. </p><br>
+			<p id="description1">* Required</p><br>
+		</div>
+
+		<form id="survey-form">
+			<label for="name" id="name-label"><b>Name:</b></label><br>
+			<input type="text" id="name" name="name" placeholder="input your name"><br>
+
+			<label for="email" id="email-label"><b>Email Address:</b></label>
+			<input type="email" id="email" name="email" required placeholder="your valid Email Address *"><br>
+
+			<label for="number" id="number-label"><b>Age:</b></label>
+			<input type="number" name="number" min="1" max="110" placeholder=" numbers (1 to 110)">
+
+			<!--Radio Survey-->
+			<label for="radio" id="radio-label"><b>Gender:</b></label>
+			<div class="radio">
+	 		<label for="Male">Male
+				<input id="male" type="radio" name="gender" value="male">
+			</label>
+			<label for="Female">Female
+				<input id="female" type="radio" name="gender" value="female">
+			</label>
+    		   <label for="Others">Others
+				<input id="other" type="radio" name="gender" value="other">
+			</label>
+			</div>
+
+			<!--Dropdown Survey-->
+			<label for="dropdown" id="dropdown-label"><b>What Technology or Gadgets do you prefer to use?
+			<select id="dropdown">
+			<option id="option1" value="Phone">Mobile/Smart Phone</option>
+			<option id="option2" value="Tablet">Tablet</option>
+			<option id="option3" value="Ipod">I-pod</option>
+			<option id="option4" value="Laptop">Laptop</option>
+			<option id="option5" value="PC">Personal Computer</option>
+			</select>
+
+			<!--Field Survey-->
+			<fieldset class="field">
+			<legend> What applications do students commonly use for online class? </legend>
+			<input type="checkbox" name="search-engines" value="Google Classroom">Google Classroom <br>
+			<input type="checkbox" name="search-engines" value="Canvas"> Canvas <br>
+			<input type="checkbox" name="search-engines" value="Discord"> Discord<br>
+			<input type="checkbox" name="search-engines" value="Microsoft Teams"> Microsoft Teams <br>
+			<input type="checkbox" name="search-engines" value="others">Others <br>
+			</fieldset>
+
+			<!--Comment Box-->
+			<label for="comment" id="comments-label"><b>Comments: </b></label>
+			<textarea name="comment" id="comment"></textarea>
+			<input type="submit" id="submit" name="Submit">
+		</form>
+	</div>
+</body>
+</html>

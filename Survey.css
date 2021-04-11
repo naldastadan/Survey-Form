@@ -1,0 +1,41 @@
+body {
+  background-color: #7BBA4E;
+}
+
+h1 {
+  text-align: center;
+  font-family: Pacifico;
+  font-size: 80px;
+}
+
+p {
+  text-align: center;
+  font-family: Lobster Two;
+  font-size: 40px;
+  margin-top: -40px;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  background-color: #C8ECAE;
+}
+
+label, input, select, span {
+  margin: 10px 0px 10px 10px;
+  font-family: Hind;
+}
+
+textarea, button {
+  margin: 10px;
+}
+
+button {
+  float: right;
+  font-family: Hind;
+  font-size: 18px;
+  color: white;
+  background-color: #3A8B00;
+  border: None;
+  border-radius: 4%;
+}
